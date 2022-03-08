@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Your Giga Pet</title>
+    <meta name="description" content="A cool thing made with Glitch">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>
+        Giga Pet
+      </h1>
+    </header>
+
+    <main>
+      <section class="pet-image-container">
+         <!-- Replace pet image with your own pet image -->
+        <img class="pet-image" src="https://cdn.glitch.me/ddd955d8-4062-4e42-9fe6-569d20b4114a%2FEevee-Pokemon-Characters.jpg?v=1636494984510">
+      </section>
+      <section class="dashboard">
+        <div>Name: <strong><span class="name"></span></strong></div>
+        <div>Weight: <strong><span class="weight"></span> pounds</strong></div>
+        <div>Happiness: <strong><span class="happiness"></span> tail wags (per smile)</strong></div>
+        <div>Stepped On: <strong><span class="stepon"></span> times</strong></div>
+        <div class="button-container">
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+<!--          Loading up Toastr js -->
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+<!--               Tostr js file -->
+          <button class="treat-button" id="updateDetails">
+            Treat
+          </button>
+          <script> //TOASTR NOTIFICATION
+            document.getElementById('updateDetails').addEventListener('click', function(){
+              toastr.warning('Caution: Gaining Weight');
+            })
+          </script>
+          <script>//TOASTR NOTIFICATION
+            document.getElementById('updateDetails').addEventListener('click', function(){
+              toastr.success('Delicious, Thanks!');
+            })
+          </script>
+          <button class="play-button" id="updateDetails2">
+            Play
+          </button>
+          <script>//TOASTR NOTIFICATION
+            document.getElementById('updateDetails2').addEventListener('click', function(){
+              toastr.warning('Caution: Losing Weight');
+            })
+          </script>
+          <script>//TOASTR NOTIFICATION
+            document.getElementById('updateDetails2').addEventListener('click', function(){
+              toastr.success('Throw me the ball again!');
+            })
+          </script>
+          <button class="exercise-button" id="updateDetails3">
+            Exercise
+          </button>
+          <script>//TOASTR NOTIFICATION
+            document.getElementById('updateDetails3').addEventListener('click', function(){
+              toastr.warning('Caution: Losing Weight & Happiness');
+            })
+          </script>
+          <script>//TOASTR NOTIFICATION
+            document.getElementById('updateDetails3').addEventListener('click', function(){
+              toastr.success('Time to go for a swim!');
+            })
+          </script>
+          <button class="hunger-button" id="updateDetails4">
+            Feed
+          </button>
+          <script>//TOASTR NOTIFICATION
+            document.getElementById('updateDetails4').addEventListener('click', function(){
+              toastr.warning('Caution: Gaining Weight');
+            })
+          </script>
+          <script>//TOASTR NOTIFICATION
+            document.getElementById('updateDetails4').addEventListener('click', function(){
+              toastr.success('Thanks, it is very delicious!');
+            })
+          </script>
+          <button class="stepon-button" id="updateDetails5" >
+            Step On
+          </button>
+          <script>//TOASTR NOTIFICATION
+            document.getElementById('updateDetails5').addEventListener('click', function(){
+              toastr.error('Danger: You will kill the pet! STOP!');
+            })
+          </script>
+          <script>//TOASTR NOTIFICATION
+            document.getElementById('updateDetails5').addEventListener('click', function(){
+              toastr.error('OW, that hurt!');
+            })
+          </script>
+        </div>
+      </section>
+    </main>
+
+    <!-- Your web-app is https, so your scripts need to be too -->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous">
+    </script>
+    
+    <audio id="audio1" src="https://play.pokemonshowdown.com/audio/cries/happiny.ogg"></audio>
+    <audio id="audio2" src="https://play.pokemonshowdown.com/audio/cries/meowstic.ogg"></audio>
+    <audio id="audio3" src="https://play.pokemonshowdown.com/audio/cries/espurr.ogg"></audio>
+    <audio id="audio4" src="https://play.pokemonshowdown.com/audio/cries/eevee.ogg"></audio>
+    
+    
+  </body>
+</html>
